@@ -36,7 +36,7 @@ ${pagehead.team_header(team, user, 'team')}
         % else:
             <div class="mod timeline">
                 <div class="summary">
-                    Welcome to ${team.name}!&nbsp;&nbsp;<a href="/teams">Explore interesting teams</a> to join. 
+                    Welcome to ${team.name|n, decode.utf8}!&nbsp;&nbsp;<a href="/teams">Explore interesting teams</a> to join. 
                 </div>
                 <div>
                   <img src="http://p.dapps.douban.com/i/35f0094671c111e2b35524b6fdf76328.jpg">

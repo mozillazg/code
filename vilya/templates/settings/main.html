@@ -66,7 +66,7 @@ ${utils.settings_submenu(projname=project.name, active='main')}
                             % if team.uid == project.product:
                                 selected="selected"
                             % endif
-                        >${team.name|n}</option>
+                        >${team.name|n, decode.utf8}</option>
                         % endfor
                     </select>
                 </div>

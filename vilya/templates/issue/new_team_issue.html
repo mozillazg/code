@@ -18,7 +18,7 @@
     <script src="${static('/js/app/issue/new.js')}"></script>
 </%def>
 
-<%def name="title()">${team.name} - New Issue</%def>
+<%def name="title()">${team.name|n, decode.utf8} - New Issue</%def>
 
 % if team.name == 'fair':
 ${pagehead.fair_header(user, 'issues')}
@@ -39,7 +39,7 @@ ${pagehead.team_header(team, user, 'issues')}
     ${upload_widget.widget('form-file-upload')}
 </div>
 
-<%def name="suffix()">${team.name}</%def>
+<%def name="suffix()">${team.name|n, decode.utf8}</%def>
 
 <%def name="preview_discussion_bucket(title, team)">
     <div class="row">

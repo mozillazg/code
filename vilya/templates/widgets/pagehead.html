@@ -150,12 +150,12 @@
     <div class="clearfix">
         <div class="pagehead">
         <h1 class="team-left">
-            <a href="${team.url}">${team.name}</a>
+            <a href="${team.url}">${team.name|n, decode.utf8}</a>
         </h1>
         % if team.description:
         <div class="team-desc">
             <p>
-                <small>${team.short_description}</small>
+                <small>${team.short_description|n, decode.utf8}</small>
             </p>
         </div>
         % endif

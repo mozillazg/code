@@ -1,4 +1,4 @@
-Team: ${team.name}
+Team: ${team.name|n, decode.utf8}
 Week: ${monday.strftime("%d/%m/%y")} - ${sunday.strftime("%d/%m/%y")}
 
 % for id, change in enumerate(changes):

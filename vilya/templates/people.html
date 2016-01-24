@@ -76,7 +76,7 @@
         <div>
             <h4>Teams</h4>
             % for team in profile_user.teams:
-                <a title="${team.name}" href="${team.url}" class="avatar-group-item">
+                <a title="${team.name|n, decode.utf8}" href="${team.url}" class="avatar-group-item">
                     <img class="avatar" src="${team.profile_icon()}">
                 </a>
             % endfor

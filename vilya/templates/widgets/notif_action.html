@@ -93,7 +93,7 @@ ${disp_action(action)}
 
 <%def name="team_add_member_notif(data)">
     <i class="icon-plus"></i>
-    ${data.get('sender')} add ${data.get('to_user')} as ${data.get('identity')} of team ${data.get('team_name')}
+    ${data.get('sender')} add ${data.get('to_user')} as ${data.get('identity')} of team ${data.get('team_name')|n, decode.utf8}
      ${disp_date(data)}
 </%def>
 

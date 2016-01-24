@@ -27,7 +27,7 @@ ${pagehead.team_header(team, user, 'news')}
             % if not readme:
             <div class="mod timeline">
                 <div class="summary">
-                    Welcome to ${team.name}!&nbsp;&nbsp;<a href="/teams">Explore interesting teams</a> to join. 
+                    Welcome to ${team.name|n, decode.utf8}!&nbsp;&nbsp;<a href="/teams">Explore interesting teams</a> to join. 
                 </div>
 
                 <div>

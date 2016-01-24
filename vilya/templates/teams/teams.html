@@ -33,8 +33,8 @@
                 <header>
                 <a class="team-link" href="${team.url}">
                     <div class="avatar"><img alt="Lore_logo_420px" src="/static/img/team_logo.svg"></div>
-                    <h2>${team.name}</h2>
-                    <h3>${team.short_description}</h3>
+                    <h2>${team.name|n, decode.utf8 }</h2>
+                    <h3>${team.short_description|n, decode.utf8}</h3>
                 </a>
                 </header>
                 <div class="image">

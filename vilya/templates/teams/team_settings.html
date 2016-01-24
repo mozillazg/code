@@ -82,9 +82,9 @@ ${pagehead.team_header(team, user, 'settings')}
                <tr>
                    <td class="text-right">Team Name</td>
                    %if is_admin:
-                   <td class='text-left'><input type='text' id='name' name='name' value='${team.name}'/></td>
+                   <td class='text-left'><input type='text' id='name' name='name' value='${team.name|n, decode.utf8}'/></td>
                    %else:
-                   <th class="text-left">${team.name}</th>
+                   <th class="text-left">${team.name|n, decode.utf8}</th>
                    %endif
                    %if error == 'name_not_exists':
                    <p class="alert alert-error">请填写team名称</p>
@@ -96,9 +96,9 @@ ${pagehead.team_header(team, user, 'settings')}
                <tr>
                    <th class='text-right'><label for='description'>Description:</label></th>
                    %if is_admin:
-                   <td class='text-left'><textarea type='text' id='description' name='description'/>${team.description}</textarea></td>
+                   <td class='text-left'><textarea type='text' id='description' name='description'/>${team.description|n, decode.utf8}</textarea></td>
                    %else:
-                   <th class="text-left">${team.description}</th>
+                   <th class="text-left">${team.description|n, decode.utf8}</th>
                    %endif
                </tr>
                <tr>

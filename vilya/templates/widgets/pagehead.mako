@@ -168,7 +168,7 @@
             <div class="team-label">
                 <strong>Team:</strong>
                 % for team in teams:
-                    <span><a href="/hub/team/${team.uid}">${team.name}</a></span>
+                    <span><a href="/hub/team/${team.uid}">${team.name|n, decode.utf8}</a></span>
                 % endfor
             </div>
         % endif
